@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../CSS/loginp1.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: 
+        linear-gradient(45deg, rgba(59, 89, 152, 0.8), rgba(25, 47, 106, 0.8)),
+        url("../IMG/background.jpg"); /* ✅ RELATIVE path */
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-box">
+                    <input type="text" name="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="button" onclick="validateLogin()"><a href="../HTML/new.html" >Login</a></button>
+            </form>
+        </div>
+    </div>
+    <script src="../JS/login.js"></script>
+</body>
+</html>
